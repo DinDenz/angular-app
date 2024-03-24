@@ -1,4 +1,10 @@
 <div class="container">
+  <mat-toolbar color="primary" *ngIf="canEdit">
+    <mat-toolbar-row>
+      <span class="example-spacer"></span>
+      <button class="button" mat-flat-button color="basic" (click)="openDialog()">Добавить товар</button>
+    </mat-toolbar-row>
+  </mat-toolbar>
   <mat-card class="example-card mat-card" *ngFor="let product of products">
     <mat-card-header class="mat-card-header">
       <mat-card-title>{{ product.title }}</mat-card-title>
