@@ -5,13 +5,18 @@
       <img class="image" src="{{ product.image }}" />
     </mat-card-header>
     <mat-card-content>
-      <p>Price {{ product.price | currency:"EUR"}}</p>
+      <p>Price {{ product.price | currency : "EUR" }}</p>
       <p>Year {{ product.year }}</p>
     </mat-card-content>
     <mat-card-actions>
       <button class="button" mat-flat-button color="primary">В Корзину</button>
-      <button class="button" mat-flat-button color="primary">
-        Подробности
+      <button
+        class="button"
+        mat-flat-button
+        color="primary"
+        [routerLink]="['/products', product.id]"
+      >
+        Подробнее
       </button>
     </mat-card-actions>
   </mat-card>
