@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { IProduct } from '../models/products';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-product-details',
@@ -6,10 +9,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./product-details.component.scss']
 })
 export class ProductDetailsComponent implements OnInit {
+  
+  product : IProduct;
+  productSubscription : Subscription;
 
-  constructor() { }
+  constructor(private route: ActivatedRoute) { }
 
-  ngOnInit() {
+  ngOnInit() : void {
+    this.productSubscription = this.route.data.subscribe( (data) => {
+      this.product = data['data'];
+    } )
   }
 
 }

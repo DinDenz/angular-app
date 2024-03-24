@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+  .mat-card {
+    background-color: var(--main-color);
+    color: black;
+    margin-right: 10px;
+  }
+  .mat-card-header {
+    display: flex;
+    flex-direction: column;
+  }
+  .image {
+    max-width: 300px;
+  }
+  .button {
+      margin-right: 7px;
+  }

@@ -7,6 +7,7 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { FooterComponent } from './components/UI/footer/footer.component';
 import { HeaderComponent } from './components/UI/header/header.component';
 import { ProductsComponent } from './components/products/products.component';
+import { ProductDetailsComponent } from './components/product-details/product-details.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
@@ -20,6 +21,7 @@ import { MatCardModule } from '@angular/material/card';
     FooterComponent,
     HeaderComponent,
     ProductsComponent,
+    ProductDetailsComponent,
   ],
   imports: [
     BrowserModule,
