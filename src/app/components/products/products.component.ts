@@ -25,7 +25,10 @@ export class ProductsComponent implements OnInit {
     );
   }
   openDialog(): void {
-    const dialogRef = this.dialog.open(DialogBoxComponent);
+    const dialogRef = this.dialog.open(DialogBoxComponent, {
+      width: '700px',
+      data: 123
+    });
   }
   ngOnDestroy() {
     if (this.productsSubscription) this.productsSubscription.unsubscribe();
