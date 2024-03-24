@@ -4,6 +4,7 @@
       "id": 1,
       "title": "MacBook",
       "price": 900,
+      "year": 2020,
       "image": "assets/images/macbook.jpg",
       "configure": {
         "chip": "M1",
@@ -16,6 +17,7 @@
       "id": 2,
       "title": "MacBook Pro (Intel)",
       "price": 1900,
+      "year": 2020,
       "image": "assets/images/macbook.jpg",
       "configure": {
         "chip": "Intel",
@@ -28,6 +30,7 @@
       "id": 3,
       "title": "MacBook",
       "price": 900,
+      "year": 2021,
       "image": "assets/images/macbook.jpg",
       "configure": {
         "chip": "M1",
@@ -40,6 +43,7 @@
       "id": 4,
       "title": "MacBook",
       "price": 900,
+      "year": 2022,
       "image": "assets/images/macbook.jpg",
       "configure": {
         "chip": "M1",
@@ -52,6 +56,7 @@
       "id": 5,
       "title": "MacBook Air",
       "price": 900,
+      "year": 2021,
       "image": "assets/images/macbook.jpg",
       "configure": {
         "chip": "M1",
@@ -64,6 +69,7 @@
       "id": 6,
       "title": "MacBook Pro",
       "price": 1300,
+      "year": 2023,
       "image": "assets/images/macbook.jpg",
       "configure": {
         "chip": "M1",
